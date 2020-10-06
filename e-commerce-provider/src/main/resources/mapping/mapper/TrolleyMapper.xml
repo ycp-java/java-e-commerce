@@ -4,6 +4,7 @@
   <resultMap id="BaseResultMap" type="com.ytc.model.Trolley">
     <id column="trolleyid" jdbcType="INTEGER" property="trolleyid" />
     <result column="commodityid" jdbcType="INTEGER" property="commodityid" />
+    <result column="userid" javaType="INTEGER" property="userid" />
     <association property="commodity" javaType="com.ytc.model.Commodity">
       <id column="commodityid" jdbcType="INTEGER" property="commodityid" />
       <result column="commodityname" jdbcType="VARCHAR" property="commodityname" />
@@ -15,6 +16,16 @@
       <result column="commodityimgid" jdbcType="INTEGER" property="commodityimgid" />
       <result column="commodityimgid1" jdbcType="INTEGER" property="commodityimgid1" />
       <result column="commodityimgid2" jdbcType="INTEGER" property="commodityimgid2" />
+    </association>
+    <association property="user" javaType="com.ytc.model.User">
+      <id column="userid" jdbcType="INTEGER" property="userid" />
+      <result column="username" jdbcType="VARCHAR" property="username" />
+      <result column="userpwd" jdbcType="VARCHAR" property="userpwd" />
+      <result column="jurisdictionid" jdbcType="INTEGER" property="jurisdictionid" />
+      <result column="provinceid" jdbcType="INTEGER" property="provinceid" />
+      <result column="cityid" jdbcType="INTEGER" property="cityid" />
+      <result column="countyid" jdbcType="INTEGER" property="countyid" />
+      <result column="address" jdbcType="VARCHAR" property="address" />
     </association>
   </resultMap>
 

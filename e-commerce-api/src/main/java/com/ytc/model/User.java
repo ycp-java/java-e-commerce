@@ -80,4 +80,44 @@ public class User {
     public void setAddress(String address) {
         this.address = address == null ? null : address.trim();
     }
+
+    public String getUserpwd() {
+        return userpwd;
+    }
+
+    public void setUserpwd(String userpwd) {
+        this.userpwd = userpwd;
+    }
+
+    public Jurisdiction getJurisdiction() {
+        return jurisdiction;
+    }
+
+    public void setJurisdiction(Jurisdiction jurisdiction) {
+        this.jurisdiction = jurisdiction;
+    }
+
+    public Province getProvince() {
+        return province;
+    }
+
+    public void setProvince(Province province) {
+        this.province = province;
+    }
+
+    public City getCity() {
+        return city;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
+    }
+
+    public County getCounty() {
+        return county;
+    }
+
+    public void setCounty(County county) {
+        this.county = county;
+    }
 }
