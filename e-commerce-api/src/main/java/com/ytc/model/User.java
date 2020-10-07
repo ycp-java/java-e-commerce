@@ -1,6 +1,9 @@
 package com.ytc.model;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
+    private static final long serialVersionUID = 6007689130696835534L;
     private Integer userid;
 
     private String username;
@@ -8,6 +11,16 @@ public class User {
     private String userpwd;
 
     private Integer jurisdictionid;
+
+    private Jurisdiction jurisdiction;
+
+    public Jurisdiction getJurisdiction() {
+        return jurisdiction;
+    }
+
+    public void setJurisdiction(Jurisdiction jurisdiction) {
+        this.jurisdiction = jurisdiction;
+    }
 
     public Integer getUserid() {
         return userid;

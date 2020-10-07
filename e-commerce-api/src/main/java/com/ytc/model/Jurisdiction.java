@@ -1,6 +1,9 @@
 package com.ytc.model;
 
-public class Jurisdiction {
+import java.io.Serializable;
+
+public class Jurisdiction implements Serializable {
+    private static final long serialVersionUID = -2026620443536694170L;
     private Integer jurisdictionid;
 
     private String jurisdictionname;

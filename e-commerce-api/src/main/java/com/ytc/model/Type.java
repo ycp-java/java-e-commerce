@@ -1,6 +1,9 @@
 package com.ytc.model;
 
-public class Type {
+import java.io.Serializable;
+
+public class Type implements Serializable {
+    private static final long serialVersionUID = -7195784032289317094L;
     private Integer typeid;
 
     private String typename;

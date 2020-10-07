@@ -1,6 +1,9 @@
 package com.ytc.model;
 
-public class Picture1 {
+import java.io.Serializable;
+
+public class Picture1 implements Serializable {
+    private static final long serialVersionUID = 4749120343086761842L;
     private Integer pictureid1;
 
     private String pictureurl1;

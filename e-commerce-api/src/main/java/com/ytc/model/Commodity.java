@@ -1,6 +1,9 @@
 package com.ytc.model;
 
-public class Commodity {
+import java.io.Serializable;
+
+public class Commodity implements Serializable {
+    private static final long serialVersionUID = 3291134811088302334L;
     private Integer commodityid;
 
     private String commodityname;
@@ -16,6 +19,42 @@ public class Commodity {
     private Integer commodityimgid1;
 
     private Integer commodityimgid2;
+    private Type type;
+    private Picture picture;
+    private Picture1 picture1;
+    private Picture2 picture2;
+
+    public Type getType() {
+        return type;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
+    }
+
+    public Picture getPicture() {
+        return picture;
+    }
+
+    public void setPicture(Picture picture) {
+        this.picture = picture;
+    }
+
+    public Picture1 getPicture1() {
+        return picture1;
+    }
+
+    public void setPicture1(Picture1 picture1) {
+        this.picture1 = picture1;
+    }
+
+    public Picture2 getPicture2() {
+        return picture2;
+    }
+
+    public void setPicture2(Picture2 picture2) {
+        this.picture2 = picture2;
+    }
 
     public Integer getCommodityid() {
         return commodityid;
