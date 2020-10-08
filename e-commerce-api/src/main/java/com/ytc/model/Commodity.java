@@ -19,10 +19,30 @@ public class Commodity implements Serializable {
     private Integer commodityimgid1;
 
     private Integer commodityimgid2;
+
+    private Integer merchantid;
+
+    private Merchant merchant;
     private Type type;
     private Picture picture;
     private Picture1 picture1;
     private Picture2 picture2;
+
+    public Integer getMerchantid() {
+        return merchantid;
+    }
+
+    public void setMerchantid(Integer merchantid) {
+        this.merchantid = merchantid;
+    }
+
+    public Merchant getMerchant() {
+        return merchant;
+    }
+
+    public void setMerchant(Merchant merchant) {
+        this.merchant = merchant;
+    }
 
     public Type getType() {
         return type;

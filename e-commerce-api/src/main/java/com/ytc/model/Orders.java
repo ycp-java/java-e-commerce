@@ -1,8 +1,9 @@
 package com.ytc.model;
 
 import java.io.Serializable;
+import java.util.Date;
 
-public class Order implements Serializable {
+public class Orders implements Serializable {
     private static final long serialVersionUID = -607476880015938139L;
     private String orderid;
 
@@ -10,8 +11,28 @@ public class Order implements Serializable {
 
     private Integer userid;
 
+    private Date createTime;
+
+    private Integer status;
+
     private Commodity commodity;
     private User user;
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
 
     public Commodity getCommodity() {
         return commodity;

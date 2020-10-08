@@ -14,6 +14,16 @@ public class User implements Serializable {
 
     private Jurisdiction jurisdiction;
 
+    private Integer adressid;
+
+    public Integer getAdressid() {
+        return adressid;
+    }
+
+    public void setAdressid(Integer adressid) {
+        this.adressid = adressid;
+    }
+
     public Jurisdiction getJurisdiction() {
         return jurisdiction;
     }
