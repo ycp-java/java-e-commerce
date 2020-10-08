@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-@RequestMapping("/ecommerce")
+@RequestMapping("/user")
 public class EcommerceController {
 @Reference
     private CommodityService commodityService;
